@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Calculadora de frequências</title>
+	<script type="text/javascript" src="index.js" defer></script>
+</head>
+<body>
+	<h1> Calculadora de Frequências</h1>
+	<div class="container1">
+		<div> Insira a frequência em hertz: <input type="text" id="freq"> <span> <button onclick="submitfreq()" name="freqbut">&#9749</button> </span>
+		</div>
+		<div> Comprimento da onda:
+			<div id="comprOnda"></div>
+		</div>
+	</div>
+	<br>
+	<hr>
+	<br>
+	<div class="container2">
+		<div> Insira a distância em metros entre você e o primeiro ponto de reflexão: <input type="text" id="dist"> <span><button onclick="submitDist()" name="distbut">&#9749</button></span>
+		</div>
+		<div> Frequência ressonante:
+			<div id="freqResso"></div>
+		</div>
+		<div> Frequência cancelada:
+			<div id="freqCancel"></div>
+		</div>
+	</div>
+</body>
+</html>

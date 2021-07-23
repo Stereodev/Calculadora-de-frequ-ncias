@@ -1,0 +1,49 @@
+.container1, .container2 {
+	display: grid;
+	gap: 20px;
+    text-align: center;
+    align-items: center;
+    font-size:1.5em;
+}
+
+.container1 > * {
+	display: grid;
+    border-radius:4px;
+    border:1px solid #bbb;
+	background-color: #f1f5f8;
+    padding: .75rem;
+    height:  30vh;
+
+}
+
+.container2 > * {
+	display: grid;
+    border-radius:4px;
+    border:1px solid #bbb;
+	background-color: #f1f5f8;
+    padding: .75rem;
+    min-height:  30vh;
+
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+	font-size: 3em;
+	font-family: arial;
+}
+
+.container1 {
+	grid-template-columns: 1fr 1fr;
+}
+
+.container2 {
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+button {
+	font-size: 3rem;
+	max-width: max-content;
+	max-height: max-content;
+	text-align: center;
+}
