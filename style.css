@@ -56,7 +56,8 @@ h1 {
 }
 
 .container2 {
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	/* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 button {
@@ -65,10 +66,23 @@ button {
 	max-height: max-content;
 	text-align: center;
 	margin: 25px;
+	border-radius: 10px;
+}
+.caixa{
+	width: auto;
 }
 
 #freq, #dist {
 	text-align: center;
 	font-size: 2rem;
-	margin: 25px;
+	margin: 1rem;
+	}
+
+@media screen and (max-width: 1000px) {
+		.container2 {
+			margin:auto 10px;
+		}
+		.caixa {
+			font-size: 1.5rem ;
+		}
 	}
